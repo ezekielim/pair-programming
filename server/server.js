@@ -1,7 +1,10 @@
 const express = require("express");
 const fs = require("fs");
+const cors = require("cors");
 
 const app = express(); // invoke express
+
+app.use(cors());
 
 const getBooks = require("./controller/getBooks");
 const bookData = fs.readFileSync("./model/data.json");

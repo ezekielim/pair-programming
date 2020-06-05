@@ -27,6 +27,21 @@ function Header() {
         </div>
       </header>
       <div className="header__divider"></div>
+
+      <main className="blockcontainer">
+        <div className="block">
+          <h3>Title of Book</h3>
+          <p>Information about book</p>
+        </div>
+        <div className="block">
+          <h3>Title of Book</h3>
+          <p>Information about book</p>
+        </div>
+        <div className="block">
+          <h3>Title of Book</h3>
+          <p>Information about book</p>
+        </div>
+      </main>
     </>
   );
 }
