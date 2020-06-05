@@ -1,0 +1,93 @@
+.header {
+  height: 169px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  @include tablet {
+    height: 80px;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+  @include desktop {
+    width: 1080px;
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+  &__logo {
+    height: 75px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    @include tablet {
+      margin-right: 169px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    @include desktop {
+      margin-right: 509px;
+    }
+  }
+  &__form {
+    width: 320px;
+    position: relative;
+    @include tablet {
+      display: flex;
+      width: 100%;
+    }
+    @include desktop {
+      width: 100%;
+    }
+  }
+  &__form-input {
+    width: 288px;
+    height: 48.5px;
+    border-radius: 4px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 8px;
+    background-color: #fafafa;
+    border-color: #e1e1e1;
+    border: 1px solid seagreen;
+    @include tablet {
+      width: 235px;
+      margin: 16px 0px 16px 0px;
+    }
+    @include desktop {
+      width: 250px;
+    }
+  }
+  &__form-button {
+    height: 48.5px;
+    width: 222px;
+    margin-left: 16px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    background-color: seagreen;
+    color: white;
+    border-color: seagreen;
+    font-size: 14px;
+    line-height: 22px;
+    @include tablet {
+      width: 100px;
+      margin: 16px 24px 16px 24px;
+    }
+  }
+
+  &__divider {
+    border-bottom: 1px solid seagreen;
+    max-width: 100%;
+    padding: 60px;
+  }
+
+  &__title {
+    color: seagreen;
+    margin-right: 20px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+
+  &__one {
+    display: flex;
+    margin-left: 150px;
+  }
+}
