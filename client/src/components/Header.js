@@ -6,7 +6,7 @@ function Header() {
     <>
       <header className="header">
         <div className="header__one">
-          <h1 className="header__title">GreenBook</h1>
+          <h1 className="header__title">GreenBook App</h1>
           <Link to="/">
             <img
               src="https://www.adazing.com/wp-content/uploads/2019/02/open-book-clipart-15-300x300.png"
